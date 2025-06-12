@@ -41,6 +41,12 @@ export default function Navbar() {
               >
                 Portfolio
               </Link>
+              <Link
+                to="/certificates"
+                className="text-gray-700 hover:text-pink-600 font-cormorant-unicase text-lg"
+              >
+                Certificates
+              </Link>
             </div>
           </div>
 
@@ -106,6 +112,13 @@ export default function Navbar() {
               onClick={toggleMenu}
             >
               Portfolio
+            </Link>
+            <Link
+              to="/certificates"
+              className="block px-3 py-2 text-gray-700 hover:text-pink-600 font-cormorant-unicase text-lg"
+              onClick={toggleMenu}
+            >
+              Certificates
             </Link>
           </div>
         </div>
