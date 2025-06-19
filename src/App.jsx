@@ -7,6 +7,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Certificates from './pages/Certificates'
+import RomaLuissProgress from './pages/42RomaLuissProgress'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/portfolio" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/certificates" element={<Certificates />} />
+            <Route path="/42romaluiss" element={<RomaLuissProgress />} />
           </Routes>
         </main>
         <Footer />

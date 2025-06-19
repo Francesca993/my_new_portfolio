@@ -47,6 +47,12 @@ export default function Navbar() {
               >
                 Certificates
               </Link>
+              <Link
+                to="/42romaluiss"
+                className="text-gray-700 hover:text-pink-600 font-cormorant-unicase text-lg"
+              >
+                42 Roma Luiss
+              </Link>
             </div>
           </div>
 
@@ -119,6 +125,13 @@ export default function Navbar() {
               onClick={toggleMenu}
             >
               Certificates
+            </Link>
+            <Link
+              to="/42romaluiss"
+              className="block px-3 py-2 text-gray-700 hover:text-pink-600 font-cormorant-unicase text-lg"
+              onClick={toggleMenu}
+            >
+              42 Roma Luiss
             </Link>
           </div>
         </div>

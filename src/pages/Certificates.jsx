@@ -15,7 +15,7 @@ const Certificates = () => {
   return (
     <div className="min-h-screen bg-gray-100 pt-32 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-12 italiana-regular">
           My Epicode Certificates
         </h1>
         
@@ -27,7 +27,7 @@ const Certificates = () => {
               onClick={() => setSelectedCertificate(cert)}
             >
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center space-grotesk-semibold">
                   {cert.title}
                 </h3>
                 <div className="aspect-w-16 aspect-h-9">
