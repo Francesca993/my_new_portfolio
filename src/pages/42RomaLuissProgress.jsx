@@ -15,13 +15,6 @@ const events = [
     slug: "piscine"
   },
   {
-    title: "🏆 Selezioni Superate",
-    description: "Il momento in cui tutto ha preso forma. Una conferma importante: ce la posso fare. L'ingresso in un mondo che promette di cambiare il mio modo di pensare, creare, crescere.",
-    date: "Ottobre 2024",
-    icon: <FaCheckCircle />,
-    slug: "selezioni-superate"
-  },
-  {
     title: "🚀 Inizio del Percorso",
     description: "L'avventura inizia ufficialmente. Un mix di entusiasmo, curiosità e un pizzico di timore. Ogni riga di codice, ogni errore, ogni confronto è un passo verso la versione migliore di me.",
     date: "9 Dicembre 2024",
@@ -55,6 +48,13 @@ const events = [
     date: "Maggio-Luglio 2025",
     icon: <FaAward />,
     slug: "mini-shell"
+  },
+  {
+    title: "🏆 Cube 3D",
+    description: "Il momento in cui tutto ha preso forma. Una conferma importante: ce la posso fare. L'ingresso in un mondo che promette di cambiare il mio modo di pensare, creare, crescere.",
+    date: "Ottobre 2024",
+    icon: <FaCheckCircle />,
+    slug: "selezioni-superate"
   },
 ];
 
