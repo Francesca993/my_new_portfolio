@@ -8,6 +8,13 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Certificates from './pages/Certificates'
 import RomaLuissProgress from './pages/42RomaLuissProgress'
+import Piscine from './pages/42pages/Piscine'
+import SelezioniSuperate from './pages/42pages/SelezioniSuperate'
+import InizioPercorso from './pages/42pages/InizioPercorso'
+import TreProgettiEsame from './pages/42pages/TreProgettiEsame'
+import SoLong from './pages/42pages/SoLong'
+import ExamRank03 from './pages/42pages/ExamRank03'
+import MiniShell from './pages/42pages/MiniShell'
 
 function App() {
   return (
@@ -22,6 +29,13 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/42romaluiss" element={<RomaLuissProgress />} />
+            <Route path="/42romaluiss/piscine" element={<Piscine />} />
+            <Route path="/42romaluiss/selezioni-superate" element={<SelezioniSuperate />} />
+            <Route path="/42romaluiss/inizio-percorso" element={<InizioPercorso />} />
+            <Route path="/42romaluiss/3-progetti-esame" element={<TreProgettiEsame />} />
+            <Route path="/42romaluiss/so-long" element={<SoLong />} />
+            <Route path="/42romaluiss/exam-rank-03" element={<ExamRank03 />} />
+            <Route path="/42romaluiss/mini-shell" element={<MiniShell />} />
           </Routes>
         </main>
         <Footer />

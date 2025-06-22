@@ -3,50 +3,58 @@ import { motion } from "framer-motion";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaSwimmer, FaCheckCircle, FaRocket, FaBook, FaLaptopCode, FaAward } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import Stepper42RomaLuiss from '../components/Stepper42RomaLuiss';
 
 const events = [
   {
-    title: "Piscine",
-    description: "Esperienza intensa e immersiva delle piscine...",
+    title: "🏊‍♂️ Piscine",
+    description: "Un salto nell'ignoto. Giorni (e notti) scanditi da sfide logiche, bug ostinati e piccoli trionfi. Qui ho imparato che non si nuota mai da soli: collaborazione, determinazione e caffè sono stati i miei primi alleati.",
     date: "16 Settembre - 11 Ottobre 2024",
     icon: <FaSwimmer />,
+    slug: "piscine"
   },
   {
-    title: "Selezioni Superate",
-    description: "La gioia e la soddisfazione di aver superato le selezioni!",
+    title: "🏆 Selezioni Superate",
+    description: "Il momento in cui tutto ha preso forma. Una conferma importante: ce la posso fare. L'ingresso in un mondo che promette di cambiare il mio modo di pensare, creare, crescere.",
     date: "Ottobre 2024",
     icon: <FaCheckCircle />,
+    slug: "selezioni-superate"
   },
   {
-    title: "Inizio del Percorso",
-    description: "L'inizio ufficiale del percorso, nuove sfide...",
+    title: "🚀 Inizio del Percorso",
+    description: "L'avventura inizia ufficialmente. Un mix di entusiasmo, curiosità e un pizzico di timore. Ogni riga di codice, ogni errore, ogni confronto è un passo verso la versione migliore di me.",
     date: "9 Dicembre 2024",
     icon: <FaRocket />,
+    slug: "inizio-percorso"
   },
   {
-    title: "3 progetti e un esame",
-    description: "Secondo cerchio -> 3 progetti e un esame",
+    title: "💻 3 progetti e un esame",
+    description: "Il secondo cerchio: qui si fa sul serio. Tre progetti intensi e un esame che sembra un boss di fine livello. Ma ogni sfida superata aggiunge un livello alla mia skill tree.",
     date: "Gennaio - Febbraio 2025",
     icon: <FaLaptopCode />,
+    slug: "3-progetti-esame"
   },
   {
-    title: "So_long!",
-    description: "And thanks for all the fish!",
+    title: "🐟 So_long!",
+    description: "And thanks for all the fish! Un progetto che è quasi un saluto ironico, un omaggio nerd. Un momento di riflessione, in equilibrio tra il codice scritto e quello ancora da scrivere. Il progetto dove ho messo più cuore, tempo e che mi ha divertita di più!",
     date: "Febbraio2025",
     icon: <FaBook />,
+    slug: "so-long"
   },
   {
-    title: "Exam Rank 03",
-    description: "Ho ricevuto un riconoscimento per l'impegno e la crescita personale.",
+    title: "🏆 Exam Rank 03",
+    description: "Una tappa che brilla: non solo per il risultato, ma per il percorso fatto. Un riconoscimento che parla di impegno, costanza e voglia di migliorare.",
     date: "Maggio 2025",
     icon: <FaAward />,
+    slug: "exam-rank-03"
   },
   {
-    title: "Mini_shell ",
-    description: "Implementazione di una shell",
+    title: "🐚 Mini_shell",
+    description: "Implementazione di una shell UNIX: uno dei progetti più complessi e affascinanti affrontati finora, dove ho messo alla prova le mie capacità di problem solving, gestione della memoria e conoscenze di basso livello.",
     date: "Maggio-Luglio 2025",
     icon: <FaAward />,
+    slug: "mini-shell"
   },
 ];
 
@@ -118,6 +126,11 @@ function TimelineItem({ event, isActive, isLast, onHover, index, activeIndex }) 
 
 export default function RomaLuissProgress() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const navigate = useNavigate();
+
+  const handleCardClick = (slug) => {
+    navigate(`/42romaluiss/${slug}`);
+  };
 
   return (
     <div className="pt-24 min-h-screen flex flex-col items-center bg-pink-50 px-4 md:px-8">
@@ -138,8 +151,13 @@ export default function RomaLuissProgress() {
               dateClassName="px-8 md:px-16 mx-4 md:mx-8"
               contentClassName=""
             >
-              <h3 className="vertical-timeline-element-title mt-4">{event.title}</h3>
-              <p>{event.description}</p>
+              <div 
+                className="cursor-pointer hover:shadow-lg transition-all duration-300 p-4 rounded-lg hover:bg-pink-50"
+                onClick={() => handleCardClick(event.slug)}
+              >
+                <h3 className="vertical-timeline-element-title mt-4">{event.title}</h3>
+                <p>{event.description}</p>
+              </div>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
