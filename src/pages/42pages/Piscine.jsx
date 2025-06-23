@@ -93,10 +93,10 @@ export default function Piscine() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-blue-50 p-6 rounded-lg">
+            <div className="bg-red-50 p-6 rounded-lg">
               <div className="flex items-center gap-3 mb-3">
-                <FaUsers className="text-blue-600" />
-                <h3 className="text-lg font-semibold text-blue-700">Le Persone</h3>
+                <FaUsers className="text-red-600" />
+                <h3 className="text-lg font-semibold text-red-700">Le Persone</h3>
               </div>
               <p className="text-gray-700">
                 Ho avuto l'occasione di incontrare persone che ancora oggi porto nel cuore. 
