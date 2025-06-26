@@ -177,9 +177,9 @@ export default function Piscine() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 mb-8"
+          className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-6 mb-8"
         >
-          <h3 className="text-xl font-semibold text-green-700 mb-4">
+          <h3 className="text-xl font-semibold text-purple-700 mb-4">
             I numeri delle Piscine
           </h3>
           <div className="grid md:grid-cols-4 gap-4 text-center">

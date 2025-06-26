@@ -22,6 +22,13 @@ const events = [
     slug: "inizio-percorso"
   },
   {
+    title: "📚 I primi progetti",
+    description: "I miei primi progetti del Common Core, dove ho imparato a scrivere codice in C.",
+    date: "Gennaio -Febbraio 2025",
+    icon: <FaCheckCircle />,
+    slug: "primi-progetti"
+  },
+  {
     title: "💻 3 progetti e un esame",
     description: "Il secondo cerchio: qui si fa sul serio. Tre progetti intensi e un esame che sembra un boss di fine livello. Ma ogni sfida superata aggiunge un livello alla mia skill tree.",
     date: "Gennaio - Febbraio 2025",
@@ -48,13 +55,6 @@ const events = [
     date: "Maggio-Luglio 2025",
     icon: <FaAward />,
     slug: "mini-shell"
-  },
-  {
-    title: "🏆 Cube 3D",
-    description: "Il momento in cui tutto ha preso forma. Una conferma importante: ce la posso fare. L'ingresso in un mondo che promette di cambiare il mio modo di pensare, creare, crescere.",
-    date: "Ottobre 2024",
-    icon: <FaCheckCircle />,
-    slug: "selezioni-superate"
   },
 ];
 

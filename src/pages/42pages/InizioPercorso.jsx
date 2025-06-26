@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaRocket, FaArrowLeft, FaCalendar, FaUsers, FaBook } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import libftImg from '../../assets/assets_articoli/libft.png';
+
 
 export default function InizioPercorso() {
   const navigate = useNavigate();
@@ -132,70 +132,8 @@ export default function InizioPercorso() {
               Non è solo coding: sviluppare resilienza, pensiero critico, spirito di iniziativa. Cambiare modo di affrontare i problemi, anche fuori dalla tecnologia.
             </li>
           </ul>
-          <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-6 mb-8"
-        >
-          <h3 className="text-xl font-semibold text-purple-700 mb-4">
-            I primi progetti del Common Core
-          </h3>
-          <div className="w-full">
-            <div className="bg-white p-4 rounded-lg w-full">
-              <h4 className="font-semibold text-purple-700 mb-2">Libft</h4>
-              <p className="text-sm text-gray-600">Implementazione di funzioni della libreria standard C</p>
-            </div>
-          </div>
         </motion.div>
 
-          <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-6 mb-8">
-            <div className="flex flex-col gap-6 items-center">
-              <div className="w-full">
-              <h3 className="text-xl font-semibold text-pink-600 mb-3">
-            Il primo progetto: Libft
-              </h3>
-                <h4 className="font-semibold text-purple-700 mb-2">Libft – Il mio primo vero traguardo</h4>
-                <p className="text-gray-700 mb-2">
-                  <strong>Libft</strong> è stato il mio battesimo del fuoco nel mondo della programmazione in C. L'obiettivo? Costruire da zero una libreria personale (<code>libft.a</code>), riscrivendo tante funzioni standard che usiamo ogni giorno, come <code>strlen</code>, <code>strcpy</code>, <code>memset</code>, <code>calloc</code>, e molte altre. Ma non solo: anche funzioni più avanzate come <code>ft_split</code>, <code>ft_itoa</code> e <code>ft_strtrim</code>.
-                </p>
-                <p className="text-gray-700 mb-2">
-                  <strong>Cosa ho affrontato:</strong>
-                  <ul className="list-disc list-inside ml-4">
-                    <li>Ricreare le funzioni della libc, solo con C puro e tanta pazienza.</li>
-                    <li>Scrivere codice robusto, modulare e pulito, rispettando le severe norme di stile 42.</li>
-                    <li>Gestire la memoria dinamica: <code>malloc</code>, <code>free</code> e la lotta ai memory leak.</li>
-                    <li>Implementare funzioni complesse come <code>ft_split</code> (gestione di array di stringhe), <code>ft_strjoin</code>, <code>ft_substr</code>, <code>ft_strtrim</code> e <code>ft_itoa</code> (conversione int → stringa).</li>
-                    <li>Imparare a usare Makefile per automatizzare la compilazione.</li>
-                  </ul>
-                </p>
-                <p className="text-gray-700 mb-2">
-                  <strong>Cosa mi ha lasciato:</strong>
-                  <ul className="list-disc list-inside ml-4">
-                    <li>Le basi solide del C: puntatori, array, gestione della memoria, funzioni.</li>
-                    <li>Debugging vero: imparare a trovare e correggere segmentation fault, memory leak, edge case.</li>
-                    <li>Precisione e pulizia: per rispettare gli standard e rendere il codice leggibile a tutti.</li>
-                    <li>Pazienza e autonomia: nessuna soluzione pronta, solo documentazione, test e tanta determinazione.</li>
-                    <li>Struttura modulare: separare i file, usare header (<code>libft.h</code>), Makefile.</li>
-                    <li>Confronto e collaborazione: peer review, scambio di idee e soluzioni con altri cadetti.</li>
-                  </ul>
-                </p>
-                <p className="text-purple-800 font-semibold mt-4">
-                  🏁 <span className="text-lg">Punteggio finale: 123/100</span><br/>
-                  Un risultato che mi ha riempita di orgoglio! Qualche piccolo dettaglio da migliorare (forse un edge case sfuggito), ma la soddisfazione di vedere la mia libreria funzionare è stata enorme.
-                </p>
-              </div>
-              <div className="w-full flex justify-center mt-6">
-                <img src={libftImg} alt="Votazione Libft" className="max-w-2xl rounded-lg shadow-lg border" />
-              </div>
-            </div>
-          </div>
-
-        </motion.div>
-
-        {/* First projects preview */}
-
-        {/* Next steps */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

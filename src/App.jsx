@@ -9,7 +9,7 @@ import Contact from './pages/Contact'
 import Certificates from './pages/Certificates'
 import RomaLuissProgress from './pages/42RomaLuissProgress'
 import Piscine from './pages/42pages/Piscine'
-import SelezioniSuperate from './pages/42pages/SelezioniSuperate'
+import IPrimiProgetti from './pages/42pages/IPrimiProgetti'
 import InizioPercorso from './pages/42pages/InizioPercorso'
 import TreProgettiEsame from './pages/42pages/TreProgettiEsame'
 import SoLong from './pages/42pages/SoLong'
@@ -30,7 +30,7 @@ function App() {
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/42romaluiss" element={<RomaLuissProgress />} />
             <Route path="/42romaluiss/piscine" element={<Piscine />} />
-            <Route path="/42romaluiss/selezioni-superate" element={<SelezioniSuperate />} />
+            <Route path="/42romaluiss/primi-progetti" element={<IPrimiProgetti />} />
             <Route path="/42romaluiss/inizio-percorso" element={<InizioPercorso />} />
             <Route path="/42romaluiss/3-progetti-esame" element={<TreProgettiEsame />} />
             <Route path="/42romaluiss/so-long" element={<SoLong />} />
