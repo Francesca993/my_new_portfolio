@@ -8,6 +8,8 @@ import borntoberootImg from '../../assets/assets_articoli/borntoberoot.png';
 import getnextlineImg from '../../assets/assets_articoli/gnl.png';
 import ftprintfImg from '../../assets/assets_articoli/printf.png';
 
+const MOTION = motion; // keep reference so eslint registers usage with JSX member syntax
+
 export default function IPrimiProgetti() {
   const navigate = useNavigate();
 

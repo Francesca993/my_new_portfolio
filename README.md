@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This project showcases my journey as a Web Developer and Digital Nomad, combining my passion for technology with my love for travel and exploration.
 
+## 🔗 Link
+
 ## 🚀 Features
 
 - **Modern Design**: Clean and responsive layout built with React and Tailwind CSS
@@ -70,9 +72,9 @@ I'm a Web Developer passionate about creating beautiful and functional web appli
 ## 📫 Contact
 
 Feel free to reach out to me through:
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
-- Email: [Your Email]
+- LinkedIn: www.linkedin.com/in/francesca-montini
+- GitHub: https://github.com/Francesca993
+- Email: montinifrancesca993@gmail.com
 
 ---
 

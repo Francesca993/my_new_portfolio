@@ -4,6 +4,8 @@ import { FaSwimmer, FaArrowLeft, FaHeart, FaUsers, FaLightbulb, FaGraduationCap,
 import { useNavigate } from 'react-router-dom';
 import piscineSuperate from '../../assets/assets_articoli/Piscine_superate.png';
 
+const MOTION = motion; // keep reference so eslint registers usage with JSX member syntax
+
 export default function Piscine() {
   const navigate = useNavigate();
 

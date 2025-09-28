@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { FaAward, FaArrowLeft, FaTrophy, FaStar, FaCheckCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
+const MOTION = motion; // keep reference so eslint registers usage with JSX member syntax
+
 export default function ExamRank03() {
   const navigate = useNavigate();
 

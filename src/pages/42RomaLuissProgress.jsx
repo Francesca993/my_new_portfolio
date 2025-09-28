@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaSwimmer, FaCheckCircle, FaRocket, FaBook, FaLaptopCode, FaAward } from 'react-icons/fa';
@@ -58,74 +57,7 @@ const events = [
   },
 ];
 
-const timelineStyles = {
-  lineColor: "#be185d", // pink-700
-  activeLineColor: "#f472b6", // pink-400
-  dotColor: "#be185d",
-  activeDotColor: "#f472b6",
-  dotSize: "1.5rem",
-  titleColor: "#be185d",
-  descriptionColor: "#374151",
-  dateColor: "#be185d",
-};
-
-function TimelineItem({ event, isActive, isLast, onHover, index, activeIndex }) {
-  const fillDelay = activeIndex !== null ? Math.max(0, (index - 1) * 0.1) : 0;
-  const fillDuration = activeIndex !== null ? Math.max(0.2, 0.5 - index * 0.1) : 0.5;
-
-  return (
-    <motion.div
-      className="flex flex-row items-center last:mb-0 cursor-pointer min-h-[3.5rem]"
-      onHoverStart={() => onHover(index)}
-      onHoverEnd={() => onHover(null)}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="relative flex flex-col items-center justify-center min-w-[2.5rem]">
-        <div
-          className={`absolute ${isLast ? "hidden" : "block"} top-0 left-1/2 -translate-x-1/2 w-1 h-full`}
-          style={{ backgroundColor: timelineStyles.lineColor, zIndex: 0 }}
-        >
-          <motion.div
-            className="w-full origin-top"
-            initial={{ scaleY: 0 }}
-            animate={{ scaleY: isActive ? 1 : 0 }}
-            transition={{ duration: fillDuration, delay: fillDelay }}
-            style={{ height: "100%", backgroundColor: timelineStyles.activeLineColor }}
-          />
-        </div>
-        <motion.div
-          className="relative z-10 rounded-full border-4"
-          style={{
-            width: timelineStyles.dotSize,
-            height: timelineStyles.dotSize,
-            borderColor: isActive ? timelineStyles.activeDotColor : timelineStyles.dotColor,
-            backgroundColor: isActive ? timelineStyles.activeDotColor : "#fff",
-          }}
-          animate={{
-            scale: isActive ? 1.2 : 1,
-            backgroundColor: isActive ? timelineStyles.activeDotColor : "#fff",
-            borderColor: isActive ? timelineStyles.activeDotColor : timelineStyles.dotColor,
-          }}
-          transition={{ duration: fillDuration, delay: fillDelay }}
-        />
-      </div>
-      <div className="flex flex-col justify-center ml-6">
-        <h3 className="text-lg font-semibold leading-tight" style={{ color: timelineStyles.titleColor }}>
-          {event.title}
-        </h3>
-        <p style={{ color: timelineStyles.descriptionColor }}>{event.description}</p>
-        <span className="text-sm" style={{ color: timelineStyles.dateColor }}>
-          {event.date}
-        </span>
-      </div>
-    </motion.div>
-  );
-}
-
 export default function RomaLuissProgress() {
-  const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
 
   const handleCardClick = (slug) => {

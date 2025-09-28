@@ -38,7 +38,7 @@ export default function Portfolio() {
             href="https://github.com/Francesca993/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-beige-100 shadow-lg w-52 h-32 p-4 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out"
+            className="bg-white shadow-lg w-52 h-32 p-4 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out"
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -53,7 +53,7 @@ export default function Portfolio() {
             href="https://www.linkedin.com/in/francesca-montini-19b90929a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-beige-100 shadow-lg w-52 h-32 p-4 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out"
+            className="bg-white shadow-lg w-52 h-32 p-4 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out"
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
@@ -68,13 +68,36 @@ export default function Portfolio() {
             href="https://talent.epicode.com/talent/e0fdbcf6-2914-4383-8558-62666a53b481"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-beige-100 shadow-lg w-52 h-32 p-4 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out"
+            className="bg-white shadow-lg w-52 h-32 p-4 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out"
           >
             <img src={epicodeimg} alt="Epicode" className="w-16 h-16 mb-2" />
             <p className="text-lg font-semibold text-black">Epicode</p>
           </a>
         </div>
       </div>
+
+      <div className="w-full md:w-4/5 lg:w-3/4 mt-12 bg-white rounded-lg shadow-lg p-6">
+        <h2 className="text-3xl font-semibold text-black mb-4 text-center">
+          Progetti online
+        </h2>
+        <p className="text-lg text-black text-center">
+          Una raccolta dei miei lavori già pubblicati sul web.  
+          Ogni progetto è un piccolo viaggio tra idee, codice e creatività.  
+          Torna a trovarmi: la lista è in continua evoluzione!
+        </p>
+        <ul className="mt-4 flex flex-col items-center gap-2">
+          <li>
+            <a
+              href="https://agri-meteo.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-3xl font-cormorant-sc text-rose-500 hover:text-rose-600 underline decoration-2 text-center transition-colors duration-200"
+            >
+              agri-meteo.vercel.app
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
-} 
+}
