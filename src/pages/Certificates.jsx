@@ -1,15 +1,22 @@
 import { useState } from 'react';
 
+import certificateM1 from '../assets/assets-certificates/Certificate of M1.png';
+import certificateM2 from '../assets/assets-certificates/Certificate  M2.png';
+import certificateM3 from '../assets/assets-certificates/Certificate of  M3.png';
+import certificateM4 from '../assets/assets-certificates/Certificate M4.png';
+import certificateM5 from '../assets/assets-certificates/Certificate M5.png';
+import certificateFinal from '../assets/assets-certificates/Certificate of Francesca Montini.png';
+
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   const certificates = [
-    { id: 1, title: 'Module 1', image: '/src/assets/assets-certificates/Certificate of M1.png' },
-    { id: 2, title: 'Module 2', image: '/src/assets/assets-certificates/Certificate  M2.png' },
-    { id: 3, title: 'Module 3', image: '/src/assets/assets-certificates/Certificate of  M3.png' },
-    { id: 4, title: 'Module 4', image: '/src/assets/assets-certificates/Certificate M4.png' },
-    { id: 5, title: 'Module 5', image: '/src/assets/assets-certificates/Certificate M5.png' },
-    { id: 6, title: 'Final Certificate', image: '/src/assets/assets-certificates/Certificate of Francesca Montini.png' },
+    { id: 1, title: 'Module 1', image: certificateM1 },
+    { id: 2, title: 'Module 2', image: certificateM2 },
+    { id: 3, title: 'Module 3', image: certificateM3 },
+    { id: 4, title: 'Module 4', image: certificateM4 },
+    { id: 5, title: 'Module 5', image: certificateM5 },
+    { id: 6, title: 'Final Certificate', image: certificateFinal },
   ];
 
   return (
